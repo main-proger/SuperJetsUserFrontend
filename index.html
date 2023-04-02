@@ -444,12 +444,15 @@ body {
          }
 
 
-         async function onCalcValueXNL(res) {
+         async function onCalcValueXNL() {
             const quantity = parseInt(document.getElementById("quantity").value);
             const value = document.getElementById("value");
             const from = await getAccount();
 
+            const res = await calcValueXNL(from, quantity);
+
             value.textContent = `${res.appove_xnl?res.appove_xnl:res.approved_xnl}/${res.approved_xnl}`;
+            return res;
          }
 
          async function onApproveXNL(res){
@@ -463,8 +466,7 @@ body {
          }
 
          async function onMintForXNL(){
-            const res = await calcValueXNL(from, quantity);
-            await onCalcValueXNL(res)
+            const res = await onCalcValueXNL()
             await onApproveXNL(res)
             tx_link = document.getElementById("tx_link");
             quantity = parseInt(document.getElementById("quantity").value);
