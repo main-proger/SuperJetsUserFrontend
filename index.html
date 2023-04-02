@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mint NFTs</title>
+    <meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<style>
+    body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#quantity
+{
+   border: 1px solid #C5C5C5;
+   border-radius: 4px;
+   background-color: #F6F6F6;
+   background-image: none;
+   color: #454545;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 13px;
+   line-height: 19px;
+   margin: 0;
+   text-align: left;
+   padding: 4px 4px 4px 4px;
+}
+#quantity:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#ThemeableButton1
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
+   user-select: none;
+   overflow: visible;
+   text-decoration: none;
+   cursor: pointer;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   vertical-align: top;
+}
+#ThemeableButton1 .ui-button
+{
+   position: absolute;
+   padding: 0;
+}
+#ThemeableButton1.ui-corner-all
+{
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+#ThemeableButton1.ui-corner-all
+{
+   border-bottom-right-radius: 4px;
+   border-top-right-radius: 4px;
+}
+#ThemeableButton1.ui-button
+{
+   background-color: #F6F6F6;
+   background-image: none;
+   border: 1px solid #C5C5C5;
+   color: #454545;
+}
+#ThemeableButton1.ui-state-hover, #ThemeableButton1.ui-button:hover
+{
+   border-color: #CCCCCC;
+   background-color: #EDEDED;
+   background-image: none;
+   color: #2B2B2B;
+}
+#ThemeableButton1.ui-state-active, #ThemeableButton1.ui-button:active
+{
+   border-color: #2E6DA4;
+   background-color: #3370B7;
+   background-image: none;
+   color: #FFFFFF;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#wb_RadioButton1
+{
+   margin: 0;
+}
+#wb_RadioButton1, #wb_RadioButton1 *, #wb_RadioButton1 *::before, #wb_RadioButton1 *::after
+{
+   box-sizing: border-box;
+}
+#wb_RadioButton1 input[type='radio']
+{
+   position: absolute;
+   padding: 0;
+   margin: 0;
+   opacity: 0;
+   z-index: 1;
+   width: 11px;
+   height: 11px;
+   left: 0;
+   top: 0;
+}
+#wb_RadioButton1 label
+{
+   display: inline-block;
+   vertical-align: middle;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 0;
+   padding: 0;
+}
+#wb_RadioButton1 label::before
+{
+   content: "";
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   background-color: #FFFFFF;
+   border: 1px solid #CCCCCC;
+   border-radius: 50%;
+}
+#wb_RadioButton1 label::after
+{
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   visibility: visible;
+   padding: 0;
+   text-align: center;
+   line-height: 11px;
+   border-radius: 50%;
+   color: #FFFFFF;
+   content: " ";
+   transform: scale(0, 0);
+}
+#wb_RadioButton1 input[type='radio']:checked + label::after
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+   transform: scale(0.66, 0.66);
+}
+#wb_RadioButton1 input[type='radio']:focus + label::before
+{
+   outline: thin dotted;
+}
+#wb_RadioButton2
+{
+   margin: 0;
+}
+#wb_RadioButton2, #wb_RadioButton2 *, #wb_RadioButton2 *::before, #wb_RadioButton2 *::after
+{
+   box-sizing: border-box;
+}
+#wb_RadioButton2 input[type='radio']
+{
+   position: absolute;
+   padding: 0;
+   margin: 0;
+   opacity: 0;
+   z-index: 1;
+   width: 11px;
+   height: 11px;
+   left: 0;
+   top: 0;
+}
+#wb_RadioButton2 label
+{
+   display: inline-block;
+   vertical-align: middle;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0;
+   height: 0;
+   padding: 0;
+}
+#wb_RadioButton2 label::before
+{
+   content: "";
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   background-color: #FFFFFF;
+   border: 1px solid #CCCCCC;
+   border-radius: 50%;
+}
+#wb_RadioButton2 label::after
+{
+   display: inline-block;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   left: 0;
+   top: 0;
+   visibility: visible;
+   padding: 0;
+   text-align: center;
+   line-height: 11px;
+   border-radius: 50%;
+   color: #FFFFFF;
+   content: " ";
+   transform: scale(0, 0);
+}
+#wb_RadioButton2 input[type='radio']:checked + label::after
+{
+   background-color: #3370B7;
+   background-image: none;
+   border-color: #3370B7;
+   transform: scale(0.66, 0.66);
+}
+#wb_RadioButton2 input[type='radio']:focus + label::before
+{
+   outline: thin dotted;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5 div
+{
+   text-align: left;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text6 div
+{
+   text-align: left;
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text7 div
+{
+   text-align: left;
+}
+
+body {
+  background-color: #ffe53b;
+  
+  background-image: linear-gradient(147deg, #ffffff 0%, #898989 74%);
+  min-height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.blog-slider {
+  width: 95%;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 25px;
+  border-radius: 25px;
+  height: 400px;
+  transition: all 0.3s;
+}
+
+</style>
+<script>
+        let accounts = [];
+        
+        async function getAccount() {
+            if (accounts.length == 0) {
+                accounts = await ethereum.request({method: 'eth_requestAccounts'});
+            }
+            return accounts[0];
+        }
+        
+        async function postJson(url, data) {
+            return await (await fetch(url, {
+                method: 'POST',
+                headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })).json();
+        }
+        
+        async function runTransaction(...data) {
+            return await ethereum.request({
+                method: 'eth_sendTransaction',
+                params: data,
+            });
+        }
+
+
+         async function calcValueETH(quantity) {
+            res = await (await fetch(`http://20.250.26.243/contract/calc_price_eth?quantity=${quantity}`)).json();
+            return res.price;
+         }
+
+         async function mintForETH(from, quantity, value){
+            data = await (await fetch(`http://20.250.26.243/contract/mint_for_eth?from=${from}&quantity=${quantity}&value=${value}`)).json();
+            console.log("transaction: " + JSON.stringify(data));
+            wb_Text2 = await runTransaction(data);
+            console.log("txHash: " + wb_Text2);
+            return wb_Text2;
+         }
+
+
+         async function onCalcValueETH() {
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const value = document.getElementById("value");
+
+            value.textContent = await calcValue(quantity);
+         }
+
+         async function onMintForETH(){
+            await onCalcValueETH()
+            tx_link = document.getElementById("tx_link");
+            quantity = parseInt(document.getElementById("quantity").value);
+            value = document.getElementById("value").textContent;
+            from = await getAccount();
+            const tx = await mintForETH(from, quantity, value);
+            tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
+            tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+         }
+
+
+         async function calcValueXNL(from, quantity) {
+            res = await (await fetch(`/contract/calc_price_xnl?from=${from}&quantity=${quantity}`)).json();
+            return res.price;
+         }
+
+         async function approveXNL(from, amount){
+            data = await (await fetch(`http://20.250.26.243/contract/approve_xnl?from=${from}&amount=${amount}`)).json();
+            console.log("transaction: " + JSON.stringify(data));
+            const tx = await runTransaction(data);
+            console.log("txHash: " + tx);
+            return tx;
+         }
+
+         async function mintForXNL(from, quantity){
+            data = await (await fetch(`http://20.250.26.243/contract/mint_for_xnl?from=${from}&quantity=${quantity}`)).json();
+            console.log("transaction: " + JSON.stringify(data));
+            const tx = await runTransaction(data);
+            console.log("txHash: " + tx);
+            return tx;
+         }
+
+
+         async function onCalcValueXNL() {
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const value = document.getElementById("value");
+            const from = await getAccount();
+
+            value.textContent = await calcValue(from, quantity);
+         }
+
+         async function onApproveXNL(){
+            tx_link = document.getElementById("tx_link");
+            value = document.getElementById("value").value;
+            from = await getAccount();
+            const tx = await approveXNL(from, value);
+            tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
+            tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+         }
+
+         async function onMintForXNL(){
+            await onCalcValueXNL()
+            await onApproveXNL()
+            tx_link = document.getElementById("tx_link");
+            quantity = parseInt(document.getElementById("quantity").value);
+            from = await getAccount();
+            const tx = await mintForXNL(from, quantity);
+            tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
+            tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+         }
+         
+    
+         function onMint(){
+            eth = document.getElementById("wb_RadioButton1");
+            if (eth.checked) {
+                  onMintForETH()
+            } else{
+                  onMintForXNL()
+            }
+         }
+   </script>
+</head>
+
+<body>
+    <div class="blog-slider">
+
+        <div class="
+        margin: auto;">
+            <input placeholder="Number of packs" type="number" id="quantity" style="
+            margin-top: 170px;
+            margin-left: 300px;
+        " name="quantity" value="" spellcheck="false"><div id="wb_Text1" style="position:absolute;left:330px;top:29px;width:289px;height:30px;z-index:1;right: 300px;">
+                    <span style="color:#000000;font-family:Arial;font-size:47px;">Mint NFTs</span>
+                </div>
+            <div id="wb_Text2" style="position:absolute;left:540px;top:197px;width:123px;height:15px;z-index:2;">
+                <span id="value" style="color:#000000;font-family:Arial;font-size:13px;">0</span>
+            </div>
+            <div id="wb_Text3" style="position:absolute;left:320px;top:330px;width:366px;height:15px;z-index:3;">
+                <a id="tx_link" href="/" style="color:#000000;font-family:Arial;font-size:13px;"></a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <div id="footer">
+            <button onclick="onMint()" class="btn third" type="submit" id="ThemeableButton1" name="" value="Mint" style="position:absolute;margin-top: 20px;margin-left: 350px;width:113px;height:52px;z-index:4;">Mint</button> </div>
+            <div id="wb_Text4" style="position:absolute;left:330px;top:165px;width:104px;height:15px;z-index:5;">
+                <span style="color:#000000;font-family:Arial;font-size:13px;">1 pack = 5 NFTs</span>
+            </div>
+            <div id="wb_RadioButton1" style="position:absolute;left:330px;top:133px;width:16px;height:11px;z-index:6;">
+                <input type="radio" id="RadioButton1" name="Name" checked value="on" style="position:absolute;left:0;top:0;"><label for="RadioButton1"></label>
+            </div>
+            <div id="wb_RadioButton2" style="position:absolute;left:410px;top:133px;width:16px;height:11px;z-index:7;">
+                <input type="radio" id="RadioButton2" name="Name" value="on" style="position:absolute;left:0;top:0;"><label for="RadioButton2"></label>
+            </div>
+            <div id="wb_Text5" style="position:absolute;left:130px;top:130px;width: 300px;height:15px;z-index:8;">
+                <span style="color:#000000;font-family:Arial;font-size:18px;width: 4px;">Select payment type:</span>
+            </div>
+            <div id="wb_Text6" style="position:absolute;left:440px;top:136px;width:33px;height:15px;z-index:9;">
+                <span style="color:#000000;font-family:Arial;font-size:13px;">XNL</span>
+            </div>
+            <div id="wb_Text7" style="position:absolute;left:360px;top:136px;width:37px;height:15px;z-index:10;">
+                <span style="color:#000000;font-family:Arial;font-size:13px;">ETH</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(".btn.third").click(function () {
+        $(this).prop('disabled', true)
+    });
+</script>
+
+</html>
+
