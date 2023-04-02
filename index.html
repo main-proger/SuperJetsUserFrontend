@@ -407,7 +407,7 @@ body {
             const quantity = parseInt(document.getElementById("quantity").value);
             const value = document.getElementById("value");
 
-            value.textContent = await calcValue(quantity);
+            value.textContent = await calcValueETH(quantity);
          }
 
          async function onMintForETH(){
@@ -449,7 +449,7 @@ body {
             const value = document.getElementById("value");
             const from = await getAccount();
 
-            value.textContent = await calcValue(from, quantity);
+            value.textContent = await calcValueXNL(from, quantity);
          }
 
          async function onApproveXNL(){
