@@ -451,15 +451,15 @@ body {
 
             const res = await calcValueXNL(from, quantity);
 
-            value.textContent = `${res.appove_xnl?res.appove_xnl:res.approved_xnl}/${res.approved_xnl}`;
+            value.textContent = `${res.appove_price?res.appove_price:res.approved_price}/${res.approved_price}`;
             return res;
          }
 
          async function onApproveXNL(res){
-            if (res.appove_xnl) {
+            if (res.appove_price) {
                tx_link = document.getElementById("tx_link");
                from = await getAccount();
-               const tx = await approveXNL(from, res.appove_xnl);
+               const tx = await approveXNL(from, res.appove_price);
                tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
                tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
             }
