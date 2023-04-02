@@ -460,8 +460,6 @@ body {
                tx_link = document.getElementById("tx_link");
                from = await getAccount();
                const tx = await approveXNL(from, res.appove_price);
-               tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
-               tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
             }
          }
 
