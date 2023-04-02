@@ -451,7 +451,7 @@ body {
 
             const res = await calcValueXNL(from, quantity);
 
-            value.textContent = `${res.appove_price?res.appove_price:res.approved_price}/${res.approved_price}`;
+            value.textContent = `${res.appove_price?res.appove_price:res.approved_price} : ${res.approved_price}`;
             return res;
          }
 
