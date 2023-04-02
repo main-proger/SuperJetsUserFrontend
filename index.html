@@ -407,14 +407,14 @@ body {
             const quantity = parseInt(document.getElementById("quantity").value);
             const value = document.getElementById("value");
 
-            value.textContent = await calcValueETH(quantity);
+            value.value = await calcValueETH(quantity);
          }
 
          async function onMintForETH(){
             await onCalcValueETH()
             tx_link = document.getElementById("tx_link");
             quantity = parseInt(document.getElementById("quantity").value);
-            value = document.getElementById("value").textContent;
+            value = document.getElementById("value").value;
             from = await getAccount();
             const tx = await mintForETH(from, quantity, value);
             tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
@@ -449,7 +449,7 @@ body {
             const value = document.getElementById("value");
             const from = await getAccount();
 
-            value.textContent = await calcValueXNL(from, quantity);
+            value.value = await calcValueXNL(from, quantity);
          }
 
          async function onApproveXNL(){
@@ -474,7 +474,7 @@ body {
          
     
          function onMint(){
-            eth = document.getElementById("wb_RadioButton1");
+            eth = document.getElementById("RadioButton1");
             if (eth.checked) {
                   onMintForETH()
             } else{
