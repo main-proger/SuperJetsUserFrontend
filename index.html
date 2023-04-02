@@ -424,7 +424,7 @@ body {
 
          async function calcValueXNL(from, quantity) {
             res = await (await fetch(`/contract/calc_price_xnl?from=${from}&quantity=${quantity}`)).json();
-            return res.price;
+            return res;
          }
 
          async function approveXNL(from, amount){
@@ -444,26 +444,28 @@ body {
          }
 
 
-         async function onCalcValueXNL() {
+         async function onCalcValueXNL(res) {
             const quantity = parseInt(document.getElementById("quantity").value);
             const value = document.getElementById("value");
             const from = await getAccount();
 
-            value.textContent = await calcValueXNL(from, quantity);
+            value.textContent = `${res.appove_xnl?res.appove_xnl:res.approved_xnl}/${res.approved_xnl}`;
          }
 
-         async function onApproveXNL(){
-            tx_link = document.getElementById("tx_link");
-            value = document.getElementById("value").textContent;
-            from = await getAccount();
-            const tx = await approveXNL(from, value);
-            tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
-            tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+         async function onApproveXNL(res){
+            if (res.appove_xnl) {
+               tx_link = document.getElementById("tx_link");
+               from = await getAccount();
+               const tx = await approveXNL(from, res.appove_xnl);
+               tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
+               tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+            }
          }
 
          async function onMintForXNL(){
-            await onCalcValueXNL()
-            await onApproveXNL()
+            const res = await calcValueXNL(from, quantity);
+            await onCalcValueXNL(res)
+            await onApproveXNL(res)
             tx_link = document.getElementById("tx_link");
             quantity = parseInt(document.getElementById("quantity").value);
             from = await getAccount();
