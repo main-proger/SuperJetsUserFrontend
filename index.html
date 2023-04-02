@@ -419,6 +419,7 @@ body {
             const tx = await mintForETH(from, quantity, value);
             tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
             tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
+            $(".btn.third").prop('disabled', false);
          }
 
 
@@ -472,7 +473,7 @@ body {
             const tx = await mintForXNL(from, quantity);
             tx_link.href =  `https://testnet.bscscan.com/tx/${tx}`;
             tx_link.textContent =  `https://testnet.bscscan.com/tx/${tx}`;
-            $(".btn.third").prop('disabled', true);
+            $(".btn.third").prop('disabled', false);
          }
          
     
